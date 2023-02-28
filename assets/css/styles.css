@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Archivo', sans-serif;
+}
+
+:root {
+    --primary-color: black;
+}
+
+/* Common  */
+.main-content {
+    width: 1140px;
+    max-width: calc(100% - 32px);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* ====================HEAD=============== */
+.head {
+     padding: 23px 0;
+}
+
+.head .body {
+    display: flex;
+    align-items: center;
+}
+
+.head .body .logo {
+    width: 83.98px;
+    height: 35.41px;
+    object-fit: cover;
+    margin-right: auto;
+}
+
+.head .body .search {
+    width: 160px;height: 31px;
+    border: 1px solid #e1e1e1;
+    background-color: #f7f7f7;
+    border-radius: 999px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head .search input {
+    background-color: #f7f7f7;
+    border: none;
+    width: 135px;
+    height: 20px;
+}
+
+.head .search i {
+    color: #7b7b7b;
+}
+
+.head .fa-user {
+    margin-left: 18px;
+    color: #7b7b7b;
+}
+
+.separate {
+    margin: 0 16px;
+    height: 30px;
+    border-left: 1px solid #e5e5e5;
+}
+
+.head .cart {
+    display: flex;
+    align-items: center;
+    width: 54.05px;
+    height: 30.39px;
+    border: 1px solid #c0c0c0;
+    color: #c0c0c0;
+    border-radius: 5px;
+    justify-content: space-evenly;
+}
+
+.head .cart {
+    transition: 0.2s ease;
+}
+
+.head .cart:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+
+/* ========================navbar============== */
+.navbar {
+    background-color: var(--primary-color);
+    padding: 12px 0;
+}
+
+.navbar .body {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .body .nav-left {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.navbar .body .nav-left .nav-item {
+    font-size: 13.68px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .body .nav-left i {
+    width: 10.56px;
+    width: 16px;
+    color: #959595;
+    margin-left: 5px;
+}
+
+.navbar .body .nav-left .separate {
+    height: 16px;
+    border-left: 1px solid #333333;
+}
+
+.navbar .body .nav-right i{
+    color: #fff;
+    height: 15.5px;
+    width: 16px;
+    margin-left: 6px;
+}
+
+/* =====================================HERO============================== */
+.hero {
+    overflow: hidden;
+}
+
+.hero .body {
+    background-image: url(../img/hero-bg.jpg);
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    background-position: -240px;
+
+}
+
+
+.hero .hero-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+
+.hero .time {
+    margin-top: 156px;
+    font-size: 16px;
+    color: var(--primary-color);
+}
+
+.hero h1 {
+    margin-top: 24px;
+    font-size: 32px;
+    font-weight: 700;
+    width: 216px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.hero .discount {
+    margin-top: 24px;
+    font-size: 16px;
+    color: var(--primary-color);
+}
+
+.hero button {
+    margin-top: 28px;
+    outline: 2px solid var(--primary-color);
+    height: 34.797px;
+    min-width: 168.88px;
+    padding: 0;
+}
+
+.hero button a {
+    display: block;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 15.52px;
+    line-height: 30px;
+    font-weight: 700;
+    height: 100%;
+    width: 100%;
+    padding: 0 4px;
+}
+
+.hero button:first-child {
+    margin-right: 18px;
+}
+
+.hero button:hover {
+    background-color: var(--primary-color);
+}
+
+.hero button a:hover {
+    color: #fff;
+}
+
+/* ========================================TYPE=================================== */
+.types {
+    margin-top: 30px;
+}
+
+.types .body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.types .types-item {
+    display: block;
+    width: 31.6%;
+    position: relative;
+    text-decoration: none;
+    font-size: 15.39px;
+    font-weight: 500;
+}
+
+.types .types-item .type-img {
+    width: 100%;
+    object-fit: cover;
+    transition: 0.25s ease;
+}
+
+.types .types-item p{
+    display: block;
+    width: 100%;
+    color: #555;
+    text-decoration: none;
+    background-color: #fefefe;
+    font-size: 15.39px;
+    font-weight: 500;
+    height: 48px;
+    line-height: 15px;
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+    transition: 0.25s ease;
+}
+
+.types .types-item:hover .type-img{
+    filter: blur(4px);
+}
+
+.types .types-item:hover p{
+    background-color: var(--primary-color);
+    color: #fff;
+}
